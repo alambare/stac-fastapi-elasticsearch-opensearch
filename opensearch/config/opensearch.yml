@@ -9,6 +9,7 @@ http.cors.enabled: true
 http.cors.allow-headers: X-Requested-With,Content-Type,Content-Length,Accept,Authorization
 
 path:
+  data: /usr/share/opensearch/data
   repo:
     - /usr/share/opensearch/snapshots
 

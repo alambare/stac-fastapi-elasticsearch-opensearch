@@ -97,11 +97,12 @@ services:
     environment:
       - discovery.type=single-node
       - plugins.security.disabled=true
-      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+      - OPENSEARCH_JAVA_OPTS=-Xms2g -Xmx2g
       - action.destructive_requires_name=false
     volumes:
       - ./opensearch/config/opensearch.yml:/usr/share/opensearch/config/opensearch.yml
       - ./opensearch/snapshots:/usr/share/opensearch/snapshots
+      - ./osdata:/usr/share/opensearch/data
     ports:
       - "9202:9202"
 

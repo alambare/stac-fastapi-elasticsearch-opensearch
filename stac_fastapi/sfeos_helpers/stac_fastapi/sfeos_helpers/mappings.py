@@ -243,6 +243,73 @@ AGGREGATION_MAPPING: Dict[str, Dict[str, Any]] = {
             "precision": 0,
         }
     },
+    # HEALPix aggregations - terms aggregation for each level
+    "healpix_level_1_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_1",
+            "size": 10000,
+        }
+    },
+    "healpix_level_2_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_2",
+            "size": 10000,
+        }
+    },
+    "healpix_level_3_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_3",
+            "size": 10000,
+        }
+    },
+    "healpix_level_4_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_4",
+            "size": 10000,
+        }
+    },
+    "healpix_level_5_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_5",
+            "size": 10000,
+        }
+    },
+    "healpix_level_6_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_6",
+            "size": 10000,
+        }
+    },
+    "healpix_level_7_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_7",
+            "size": 10000,
+        }
+    },
+    "healpix_level_8_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_8",
+            "size": 10000,
+        }
+    },
+    "healpix_level_9_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_9",
+            "size": 10000,
+        }
+    },
+    "healpix_level_10_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_10",
+            "size": 10000,
+        }
+    },
+    "healpix_level_11_frequency": {
+        "terms": {
+            "field": "properties.dggs:healpix_nested.level_11",
+            "size": 10000,
+        }
+    },
 }
 
 ES_MAPPING_TYPE_TO_JSON: Dict[

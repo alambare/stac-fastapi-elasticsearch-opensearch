@@ -141,3 +141,5 @@ venv
 /docs/src/api/*
 
 .DS_Store
+
+osdata

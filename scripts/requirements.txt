@@ -1,0 +1,7 @@
+# ingest STAC
+psutil
+tqdm
+# compute HEALPix indices
+cdshealpix
+requests
+shapely

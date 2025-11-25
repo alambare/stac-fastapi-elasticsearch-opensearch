@@ -1,2 +1,4 @@
 elasticsearch/snapshots/
 .venv
+osdata
+.vscode
