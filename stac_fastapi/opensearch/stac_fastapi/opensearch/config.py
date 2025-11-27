@@ -145,7 +145,7 @@ if (
     OpensearchSettings().enable_direct_response
     or AsyncOpensearchSettings().enable_direct_response
 ):
-    logging.basicConfig(level=logging.WARNING)
-    logging.warning(
+    logging.basicConfig(level=logging.ERROR)
+    logging.error(
         "ENABLE_DIRECT_RESPONSE is True: All FastAPI dependencies (including authentication) are DISABLED for all routes!"
     )
